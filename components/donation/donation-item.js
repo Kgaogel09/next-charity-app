@@ -18,7 +18,7 @@ function DonationItem({
   return (
     <li>
       <div>
-        <img src={"/" + image} alt={heading} />
+        <img src={image} alt={heading} />
       </div>
       <di>
         <h2>{heading}</h2>

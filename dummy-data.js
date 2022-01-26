@@ -1,7 +1,7 @@
 const DUMMY_DONATIONS = [
   {
-    id: "d1",
-    image: "donate2",
+    id: "1",
+    image: "/images/donate2.jpeg",
     heading: "Feed 60 Kids for a month",
     subHeading: "RAISING R30 000 BY 21 AUG",
     description: "Feed-a-child, Cape Town",
@@ -16,12 +16,12 @@ const DUMMY_DONATIONS = [
     contributions: 150,
   },
   {
-    id: "d2",
-    image: "donate3",
+    id: "2",
+    image: "/images/donate3.jpeg",
     heading: "Buy 5000 Blankets",
     subHeading: "RAISING R150 000 BY 02 JUN",
     description: "Drought fund, Durban",
-    aboutImg: "assets/donate7.jpg",
+    aboutImg: "/images/donate7.jpg",
     cta: false,
     cta_url: "",
     isPopular: true,
@@ -32,12 +32,12 @@ const DUMMY_DONATIONS = [
     contributions: 50,
   },
   {
-    id: "d3",
-    image: "donate5",
+    id: "3",
+    image: "/images/donate5.jpeg",
     heading: "Sponsor a farm with 1000 litres of water",
     subHeading: "RAISING R750 000 BY 08 SEP",
     description: "SPCA, Johannesburg",
-    aboutImg: "assets/donate4.jpg",
+    aboutImg: "/images/donate4.jpg",
     cta: true,
     cta_url: "/about",
     isEnding: true,
@@ -48,12 +48,12 @@ const DUMMY_DONATIONS = [
     contributions: 250,
   },
   {
-    id: "d4",
-    image: "donate7",
+    id: "4",
+    image: "/images/donate7.jpeg",
     heading: "Buy 5000 Blankets",
     subHeading: "RAISING R50 000 BY 21 MAY",
     description: "Drought fund, Durban",
-    aboutImg: "assets/blankets.jpg",
+    aboutImg: "/images/blankets.jpg",
     cta: false,
     cta_url: "",
     isPopular: true,
@@ -69,7 +69,7 @@ export function getAllDonations() {
   return DUMMY_DONATIONS;
 }
 
-export function getEventById(id) {
+export function getDonationById(id) {
   return DUMMY_DONATIONS.find((donation) => donation.id === id);
 }
 

@@ -4,6 +4,7 @@ import { getAllDonations } from "../dummy-data";
 
 function HomePage() {
   const allDonations = getAllDonations();
+  console.log(allDonations);
   return (
     <Fragment>
       <DonationList items={allDonations} />
