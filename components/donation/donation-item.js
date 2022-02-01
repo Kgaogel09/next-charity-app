@@ -14,21 +14,24 @@ function DonationItem({
   progress,
   contributions,
 }) {
-  const donateAgain = `/donation/${id}`;
   return (
-    <li>
-      <div>
-        <img src={image} alt={heading} />
-      </div>
-      <di>
-        <h2>{heading}</h2>
-        <h4>{subHeading}</h4>
-        <p>{description}</p>
-      </di>
-      <div>
-        <Link href={donateAgain}>Donate Again</Link>
-      </div>
-    </li>
+    <div className={classes.card}>
+      <li className={classes.list}>
+        <div className={classes.iconContainer}>
+          <img src={image} alt={heading} />
+        </div>
+        <di>
+          <h2>{heading}</h2>
+          <h4>{subHeading}</h4>
+          <p>{description}</p>
+        </di>
+        {cta && (
+          <div>
+            <Link href={`/donation/${id}`}>Donate Again</Link>
+          </div>
+        )}
+      </li>
+    </div>
   );
 }
 
