@@ -22,7 +22,7 @@ function DonationItem({
           <Image src={image} alt={heading} width={90} height={90} />
         </div>
         <div className={cta ? "w20" : "w60"}>
-          <p className="font-md">{heading}</p>
+          <p className="font-md mb1">{heading}</p>
           <p className="font-sm grey">{subHeading}</p>
           <p className="font-xs bold">{description}</p>
         </div>
