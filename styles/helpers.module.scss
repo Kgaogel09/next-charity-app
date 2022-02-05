@@ -178,6 +178,12 @@
   }
 }
 
+.r {
+  &100 {
+    border-radius: 100%;
+  }
+}
+
 .img-fluid {
   display: block;
   max-width: 100%;

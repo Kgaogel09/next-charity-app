@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import "/styles/helpers.module.scss";
+import classes from "./donation-item.module.scss";
 
 function DonationItem({
   id,
@@ -16,10 +18,10 @@ function DonationItem({
   return (
     <div className="border-bottom p2">
       <li className="display-flex flex-row justify-between align-center">
-        <div className="w40">
-          <img src={image} alt={heading} />
+        <div className={classes.image}>
+          <Image src={image} alt={heading} width={90} height={90} />
         </div>
-        <div className="w40">
+        <div className={cta ? "w30" : "w50"}>
           <h2>{heading}</h2>
           <h4>{subHeading}</h4>
           <p>{description}</p>
