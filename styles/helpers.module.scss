@@ -1,0 +1,173 @@
+@import "./variables.module";
+
+.font- {
+  &xs {
+    font-size: 0.5rem;
+  }
+  &md {
+    font-size: 1rem;
+  }
+  &lg {
+    font-size: 1.25rem;
+  }
+  &xlg {
+    font-size: 1.5rem;
+  }
+}
+
+.display- {
+  &flex {
+    display: flex;
+  }
+  &block {
+    display: block;
+  }
+}
+
+.flex- {
+  &row {
+    flex-direction: row;
+  }
+  &column {
+    flex-direction: column;
+  }
+}
+
+.justify {
+  &-center {
+    justify-content: center;
+  }
+  &-between {
+    justify-content: space-between;
+  }
+  &-around {
+    justify-content: space-around;
+  }
+}
+
+.p {
+  &1 {
+    padding: 1rem;
+  }
+  &2 {
+    padding: 1.25rem;
+  }
+  &t1 {
+    padding-top: 1rem;
+  }
+  &t2 {
+    padding-top: 1.25rem;
+  }
+  &b1 {
+    padding-top: 1rem;
+  }
+  &b2 {
+    padding-top: 1.25rem;
+  }
+  &x1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  &x2 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  &y1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  &y2 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+.m {
+  &1 {
+    margin: 1rem;
+  }
+  &2 {
+    margin: 1.25rem;
+  }
+  &t1 {
+    margin-top: 1rem;
+  }
+  &t2 {
+    margin-top: 1.25rem;
+  }
+  &b1 {
+    margin-top: 1rem;
+  }
+  &b2 {
+    margin-top: 1.25rem;
+  }
+  &x1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  &x2 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  &y1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  &y2 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.w {
+  &10 {
+    width: 10%;
+  }
+  &20 {
+    width: 20%;
+  }
+  &30 {
+    width: 30%;
+  }
+  &40 {
+    width: 40%;
+  }
+  &50 {
+    width: 50%;
+  }
+  &60 {
+    width: 60%;
+  }
+  &70 {
+    width: 70%;
+  }
+  &80 {
+    width: 80%;
+  }
+  &90 {
+    width: 90%;
+  }
+  &100 {
+    width: 100%;
+  }
+}
+
+.border- {
+  &bottom {
+    border-bottom: 1px solid $light-grey-color;
+  }
+}
+
+.align-center {
+  align-items: center;
+}
+
+.img-fluid {
+  display: block;
+  max-width: 100%;
+}
+
+.disabled {
+  background: lightgray;
+  cursor: not-allowed;
+}

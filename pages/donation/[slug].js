@@ -1,10 +1,10 @@
 import { useRouter } from "next/router";
 import { Fragment } from "react";
-import { getDonationById } from "../../dummy-data";
+import { getDonationById } from "/dummy-data";
 
 function DonationDetailPage() {
   const router = useRouter();
-  const donationId = router.query.donationId;
+  const donationId = router.query.slug;
   const donation = getDonationById(donationId);
 
   if (!donation) {

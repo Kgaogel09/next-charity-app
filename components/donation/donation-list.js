@@ -1,10 +1,9 @@
 import DonationItem from "./donation-item";
-import classes from "./donation-list.module.css";
 
 function DonationList({ items }) {
   return (
-    <div className={classes.card}>
-      <ul className={classes.list}>
+    <div>
+      <ul>
         {items.map((donation) => (
           <DonationItem
             key={donation.id}

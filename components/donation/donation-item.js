@@ -1,6 +1,5 @@
 import Link from "next/link";
-import classes from "./donation-item.module.css";
-Link;
+import "/styles/helpers.module.scss";
 
 function DonationItem({
   id,
@@ -15,18 +14,18 @@ function DonationItem({
   contributions,
 }) {
   return (
-    <div className={classes.card}>
-      <li className={classes.list}>
-        <div className={classes.iconContainer}>
+    <div className="border-bottom p2">
+      <li className="display-flex flex-row justify-between align-center">
+        <div className="w40">
           <img src={image} alt={heading} />
         </div>
-        <di>
+        <div className="w40">
           <h2>{heading}</h2>
           <h4>{subHeading}</h4>
           <p>{description}</p>
-        </di>
+        </div>
         {cta && (
-          <div>
+          <div className="w10">
             <Link href={`/donation/${id}`}>Donate Again</Link>
           </div>
         )}
