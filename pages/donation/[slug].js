@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { Fragment } from "react";
-import Layout from "../../components/layout/layout";
+import Header from "../../components/layout/header";
 import { getDonationById } from "/dummy-data";
 
 function DonationDetailPage() {
@@ -16,9 +16,10 @@ function DonationDetailPage() {
     );
   }
   return (
-    <Layout>
+    <Fragment>
+      <Header />
       <div>{donation.description}</div>
-    </Layout>
+    </Fragment>
   );
 }
 
